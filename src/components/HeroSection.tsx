@@ -7,6 +7,18 @@ export const HeroSection = () => {
     document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleGithubClick = () => {
+    window.open("https://github.com/Shriram-Vatturkar", "_blank", "noopener noreferrer");
+  };
+
+  const handleLinkedinClick = () => {
+    window.open("https://www.linkedin.com/in/shriram-vatturkar-32a40a26b/", "_blank", "noopener noreferrer");
+  };
+
+  const handleEmailClick = () => {
+    window.open("mailto:shriram.vatturkar@gmail.com", "_blank", "noopener noreferrer");
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
@@ -27,7 +39,7 @@ export const HeroSection = () => {
 
           {/* Name and Title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-            <span className="gradient-text">Alex Johnson</span>
+            <span className="gradient-text">Shriram Vatturkar</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-in-right">
@@ -43,13 +55,28 @@ export const HeroSection = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-4 mb-12">
-            <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              className="hover:scale-110 transition-transform"
+              onClick={handleGithubClick}
+            >
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              className="hover:scale-110 transition-transform"
+              onClick={handleLinkedinClick}
+            >
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              className="hover:scale-110 transition-transform"
+              onClick={handleEmailClick}
+            >
               <Mail className="h-5 w-5" />
             </Button>
           </div>

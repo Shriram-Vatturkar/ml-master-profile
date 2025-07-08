@@ -5,8 +5,9 @@ import { Brain, Code, Database, Zap } from "lucide-react";
 
 export const AboutSection = () => {
   const skills = [
-    "Python", "PyTorch", "TensorFlow", "Scikit-learn", "FastAPI", "JavaScript", 
-    "React", "Node.js", "SQL", "MongoDB", "Docker", "AWS", "Git", "Jupyter"
+    "Python", "PyTorch", "TensorFlow", "Scikit-learn", "FastAPI", "SQL", 
+    "MongoDB", "Docker", "AWS", "Nvidia RAPIDS", "LangChain", "Amazon Web Services",
+    "PowerBI", "Linux"
   ];
 
   const highlights = [
@@ -17,8 +18,8 @@ export const AboutSection = () => {
     },
     {
       icon: Code,
-      title: "Full-Stack Development",
-      description: "Building scalable web applications with modern frameworks and technologies"
+      title: "Business Intelligence",
+      description: "Designing interactive dashboards and data models with Power BI to drive data-driven decision-making"
     },
     {
       icon: Database,

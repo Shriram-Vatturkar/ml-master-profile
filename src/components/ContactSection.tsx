@@ -31,6 +31,18 @@ export const ContactSection = () => {
     }));
   };
 
+  const handleGithubClick = () => {
+    window.open("https://github.com/Shriram-Vatturkar", "_blank", "noopener noreferrer");
+  };
+
+  const handleLinkedinClick = () => {
+    window.open("https://www.linkedin.com/in/shriram-vatturkar-32a40a26b/", "_blank", "noopener noreferrer");
+  };
+
+  const handleEmailClick = () => {
+    window.open("mailto:shriram.vatturkar@gmail.com", "_blank", "noopener noreferrer");
+  };
+
   return (
     <section id="contact" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,15 +113,15 @@ export const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span>alex.johnson@email.com</span>
+                  <span>shriram.vatturkar@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Github className="h-5 w-5 text-primary" />
-                  <span>github.com/alexjohnson</span>
+                  <span>github.com/Shriram-Vatturkar</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Linkedin className="h-5 w-5 text-primary" />
-                  <span>linkedin.com/in/alexjohnson</span>
+                  <span>linkedin.com/in/shriram-vatturkar-32a40a26b</span>
                 </div>
               </div>
             </Card>
@@ -117,13 +129,28 @@ export const ContactSection = () => {
             <Card className="p-6 glass-card">
               <h3 className="text-lg font-semibold mb-4">Social Media</h3>
               <div className="flex space-x-4">
-                <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110">
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  className="hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  onClick={handleGithubClick}
+                >
                   <Github className="h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110">
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  className="hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  onClick={handleLinkedinClick}
+                >
                   <Linkedin className="h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110">
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  className="hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  onClick={handleEmailClick}
+                >
                   <Mail className="h-5 w-5" />
                 </Button>
               </div>
