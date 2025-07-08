@@ -1,0 +1,77 @@
+
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+
+export const HeroSection = () => {
+  const scrollToProjects = () => {
+    document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-purple-500/5" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center animate-fade-in">
+          {/* Profile Image Placeholder */}
+          <div className="mb-8 flex justify-center">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center animate-float">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+                alt="Profile"
+                className="w-30 h-30 rounded-full object-cover border-4 border-white/20"
+              />
+            </div>
+          </div>
+
+          {/* Name and Title */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+            <span className="gradient-text">Alex Johnson</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-in-right">
+            AI & ML Enthusiast | Developer | Problem Solver
+          </p>
+
+          <div className="max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Computer Science student passionate about pushing the boundaries of artificial intelligence 
+              and machine learning to solve real-world problems.
+            </p>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex justify-center space-x-4 mb-12">
+            <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+              <Github className="h-5 w-5" />
+            </Button>
+            <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+              <Linkedin className="h-5 w-5" />
+            </Button>
+            <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+              <Mail className="h-5 w-5" />
+            </Button>
+          </div>
+
+          {/* CTA Button */}
+          <Button
+            onClick={scrollToProjects}
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full hover:scale-105 transition-all"
+          >
+            View My Projects
+            <ArrowDown className="ml-2 h-4 w-4" />
+          </Button>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
