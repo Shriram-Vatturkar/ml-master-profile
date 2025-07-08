@@ -3,30 +3,43 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
+  id: string;
   title: string;
   description: string;
   image: string;
   tags: string[];
   githubUrl?: string;
   liveUrl?: string;
-  featured?: boolean;
 }
 
 export const ProjectCard = ({ 
+  id,
   title, 
   description, 
   image, 
   tags, 
   githubUrl, 
-  liveUrl, 
-  featured 
+  liveUrl
 }: ProjectCardProps) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/project/${id}`);
+  };
+
+  const handleButtonClick = (e: React.MouseEvent, url: string) => {
+    e.stopPropagation();
+    window.open(url, '_blank', 'noopener noreferrer');
+  };
+
   return (
-    <Card className={`group hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden ${
-      featured ? 'ring-2 ring-primary/50' : ''
-    }`}>
+    <Card 
+      className="group hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer"
+      onClick={handleCardClick}
+    >
       <div className="relative overflow-hidden">
         <img
           src={image}
@@ -38,12 +51,22 @@ export const ProjectCard = ({
         {/* Action buttons overlay */}
         <div className="absolute bottom-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           {githubUrl && (
-            <Button size="sm" variant="secondary" className="h-8 w-8 p-0">
+            <Button 
+              size="sm" 
+              variant="secondary" 
+              className="h-8 w-8 p-0"
+              onClick={(e) => handleButtonClick(e, githubUrl)}
+            >
               <Github className="h-4 w-4" />
             </Button>
           )}
           {liveUrl && (
-            <Button size="sm" variant="secondary" className="h-8 w-8 p-0">
+            <Button 
+              size="sm" 
+              variant="secondary" 
+              className="h-8 w-8 p-0"
+              onClick={(e) => handleButtonClick(e, liveUrl)}
+            >
               <ExternalLink className="h-4 w-4" />
             </Button>
           )}
@@ -51,16 +74,9 @@ export const ProjectCard = ({
       </div>
 
       <CardHeader>
-        <div className="flex items-center justify-between">
-          <CardTitle className="text-lg group-hover:text-primary transition-colors">
-            {title}
-          </CardTitle>
-          {featured && (
-            <Badge variant="default" className="bg-primary">
-              Featured
-            </Badge>
-          )}
-        </div>
+        <CardTitle className="text-lg group-hover:text-primary transition-colors">
+          {title}
+        </CardTitle>
         <CardDescription className="text-sm line-clamp-2">
           {description}
         </CardDescription>
