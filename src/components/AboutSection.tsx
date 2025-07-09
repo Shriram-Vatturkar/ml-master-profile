@@ -39,7 +39,7 @@ export const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a dedicated Computer Science student with a passion for artificial intelligence and machine learning. 
+            I'm a dedicated Artificial Intelligence and Machine Learning student
             Currently pursuing my degree while building innovative projects that bridge the gap between theoretical 
             knowledge and practical applications.
           </p>

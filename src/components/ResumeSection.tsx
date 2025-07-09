@@ -27,10 +27,6 @@ export const ResumeSection = () => {
             <Download className="mr-2 h-5 w-5" />
             Download Resume
           </Button>
-
-          <p className="text-sm text-muted-foreground mt-4">
-            PDF • Last updated: December 2024
-          </p>
         </Card>
       </div>
     </section>
