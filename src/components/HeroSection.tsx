@@ -26,11 +26,11 @@ export const HeroSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center animate-fade-in">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center animate-float">
               <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+                src="/lovable-uploads/fd29f6a1-e9c1-4913-a2fe-2d2fe1dc09b0.png"
                 alt="Profile"
                 className="w-30 h-30 rounded-full object-cover border-4 border-white/20"
               />
@@ -48,8 +48,8 @@ export const HeroSection = () => {
 
           <div className="max-w-2xl mx-auto mb-8">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Computer Science student passionate about pushing the boundaries of artificial intelligence 
-              and machine learning to solve real-world problems.
+              Artificial Intelligence and Machine Learning student passionate about pushing the boundaries of technology 
+              and aiming to solve real-world problems.
             </p>
           </div>
 

@@ -18,9 +18,6 @@ export const ResumeSection = () => {
           <div className="mb-6">
             <FileText className="h-16 w-16 text-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Shriram Vatturkar - Resume</h3>
-            <p className="text-muted-foreground">
-              Computer Science Student specializing in AI & Machine Learning
-            </p>
           </div>
 
           <Button 
