@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export const ProjectsSection = () => {
   const [selectedFilter, setSelectedFilter] = useState("All");
+  const [showAll, setShowAll] = useState(false);
 
   const projects = [
     {
@@ -66,6 +67,9 @@ export const ProjectsSection = () => {
         project.tags.some(tag => tag.toLowerCase().includes(selectedFilter.toLowerCase()))
       );
 
+  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);
+  const hasMoreProjects = filteredProjects.length > 6;
+
   return (
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,12 +96,24 @@ export const ProjectsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <div key={project.id} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <ProjectCard {...project} />
             </div>
           ))}
         </div>
+
+        {hasMoreProjects && (
+          <div className="flex justify-center mt-12">
+            <Button
+              variant="outline"
+              onClick={() => setShowAll(!showAll)}
+              className="transition-all hover:scale-105"
+            >
+              {showAll ? "View Less" : "View More"}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
