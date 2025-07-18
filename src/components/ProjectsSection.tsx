@@ -8,21 +8,20 @@ export const ProjectsSection = () => {
 
   const projects = [
     {
-      id: "neural-style-transfer",
-      title: "Neural Style Transfer",
-      description: "Deep learning model that applies artistic styles to images using convolutional neural networks and PyTorch.",
-      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
-      tags: ["Python", "PyTorch", "Computer Vision", "AI"],
+      id: "legal-search-engine",
+      title: "Legal Search Engine: RAG and GraphRAG-based Legal Document Retrieval",
+      description: "Developed a deep learning-powered legal search engine for corporate law using RAG and GraphRAG for precise document retrieval and summarization.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      tags: ["RAG", "GraphRAG", "Deep Learning", "NLP", "Legal Tech"],
       githubUrl: "#"
     },
     {
-      id: "smart-chatbot-assistant",
-      title: "Smart Chatbot Assistant",
-      description: "AI-powered chatbot using natural language processing to provide intelligent responses and task automation.",
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=300&fit=crop",
-      tags: ["NLP", "Python", "FastAPI", "React"],
-      githubUrl: "#",
-      liveUrl: "#"
+      id: "cognitive-disorder-identification",
+      title: "Cognitive Disorder Identification: Dementia Stages using Deep Learning",
+      description: "Developed a model which classifies MRI of brain scans into dementia stages using machine learning and deep learning techniques.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
+      tags: ["Deep Learning", "CNN", "Medical AI", "MRI Analysis", "Classification"],
+      githubUrl: "#"
     },
     {
       id: "stock-price-predictor",
@@ -41,20 +40,20 @@ export const ProjectsSection = () => {
       githubUrl: "#"
     },
     {
-      id: "personal-finance-tracker",
-      title: "Personal Finance Tracker",
-      description: "Full-stack web application for tracking expenses and visualizing financial data with interactive charts.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "D3.js"],
+      id: "stock-watch",
+      title: "Stock Watch: Realtime Stock Market Analysis using Machine Learning",
+      description: "Created a Web Application which analyzes real time sentiment of news headlines related to stock market and implemented as a Machine Learning model.",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop",
+      tags: ["Machine Learning", "Flask", "ReactJS", "Google API", "Sentiment Analysis"],
       githubUrl: "#",
       liveUrl: "#"
     },
     {
-      id: "music-recommendation-system",
-      title: "Music Recommendation System",
-      description: "Collaborative filtering system that recommends music based on user preferences and listening history.",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-      tags: ["Recommendation System", "Python", "Scikit-learn", "Pandas"],
+      id: "face-shape-analyzer",
+      title: "Face Shape Analyzer: Find out your Face Shape",
+      description: "Developed an offline model which inputs facial images and classifies face shape based on different categories using OpenCV and Haar Cascade.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop",
+      tags: ["Computer Vision", "OpenCV", "Haar Cascade", "Image Processing", "Classification"],
       githubUrl: "#"
     }
   ];

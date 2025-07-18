@@ -11,51 +11,55 @@ const ProjectDetail = () => {
   // Project data - in a real app this would come from an API or database
   const projects = [
     {
-      id: "neural-style-transfer",
-      title: "Neural Style Transfer",
-      description: "Deep learning model that applies artistic styles to images using convolutional neural networks and PyTorch.",
-      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
-      tags: ["Python", "PyTorch", "Computer Vision", "AI"],
+      id: "legal-search-engine",
+      title: "Legal Search Engine: RAG and GraphRAG-based Legal Document Retrieval",
+      description: "Developed a deep learning-powered legal search engine for corporate law using RAG and GraphRAG for precise document retrieval and summarization.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      tags: ["RAG", "GraphRAG", "Deep Learning", "NLP", "Legal Tech"],
       githubUrl: "#",
       liveUrl: null,
-      fullDescription: "This project implements neural style transfer using deep convolutional neural networks. The model takes two images - a content image and a style image - and produces a new image that maintains the content structure while adopting the artistic style of the reference image. Built with PyTorch, the implementation uses pre-trained VGG networks for feature extraction and gradient-based optimization to minimize the combined content and style loss functions.",
+      fullDescription: "This project implements a sophisticated legal document retrieval system combining Retrieval-Augmented Generation (RAG) with GraphRAG for corporate law applications. The system enables precise document retrieval and automatic summarization, making complex legal research more efficient and accessible for legal professionals.",
       features: [
-        "Real-time style transfer with GPU acceleration",
-        "Support for multiple artistic styles",
-        "Batch processing capabilities",
-        "Custom loss function optimization",
-        "Web interface for easy interaction"
+        "RAG-based document retrieval with semantic search",
+        "GraphRAG implementation for relationship-based querying",
+        "Neo4j-based knowledge graphs for legal document relationships",
+        "Pinecone vector search for hybrid retrieval combining semantic and relationship-based querying",
+        "Interactive Gradio-powered UI for intuitive querying and graph visualization",
+        "Automated legal document summarization"
       ],
       technologies: [
-        "PyTorch for deep learning framework",
-        "OpenCV for image processing",
-        "NumPy for numerical computations",
-        "Flask for web interface",
-        "CUDA for GPU acceleration"
+        "Python for core development",
+        "RAG and GraphRAG frameworks",
+        "Neo4j for knowledge graph storage",
+        "Pinecone for vector database",
+        "Gradio for user interface",
+        "Deep learning models for document processing"
       ]
     },
     {
-      id: "smart-chatbot-assistant",
-      title: "Smart Chatbot Assistant",
-      description: "AI-powered chatbot using natural language processing to provide intelligent responses and task automation.",
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=300&fit=crop",
-      tags: ["NLP", "Python", "FastAPI", "React"],
+      id: "cognitive-disorder-identification",
+      title: "Cognitive Disorder Identification: Dementia Stages using Deep Learning",
+      description: "Developed a model which classifies MRI of brain scans into dementia stages using machine learning and deep learning techniques.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
+      tags: ["Deep Learning", "CNN", "Medical AI", "MRI Analysis", "Classification"],
       githubUrl: "#",
-      liveUrl: "#",
-      fullDescription: "An intelligent conversational AI system built with modern NLP techniques. The chatbot can understand context, maintain conversation history, and perform various tasks through natural language commands. It integrates with external APIs to provide weather updates, schedule management, and information retrieval.",
+      liveUrl: null,
+      fullDescription: "This medical AI project focuses on the early identification and classification of dementia stages using advanced machine learning and deep learning techniques. The system analyzes MRI brain scans to classify different stages of dementia, addressing critical challenges in medical diagnosis including class imbalance and subtle image differences between dementia stages.",
       features: [
-        "Context-aware conversations",
-        "Multi-intent recognition",
-        "Task automation capabilities",
-        "Integration with external APIs",
-        "Real-time response generation"
+        "Multi-model approach with CNN, VGG11, VGG16, SVM, KNN, Decision Trees, and Random Forests",
+        "MRI image classification for dementia stage identification",
+        "Advanced preprocessing to handle class imbalance issues",
+        "Analysis of 6400 MRI brain scans dataset",
+        "Comparative model performance evaluation",
+        "Medical-grade accuracy for clinical applications"
       ],
       technologies: [
-        "Transformers library for NLP models",
-        "FastAPI for backend services",
-        "React for frontend interface",
-        "PostgreSQL for conversation storage",
-        "Redis for session management"
+        "Python for machine learning implementation",
+        "TensorFlow/Keras for deep learning models",
+        "OpenCV for medical image processing",
+        "Scikit-learn for traditional ML algorithms",
+        "NumPy and Pandas for data processing",
+        "Medical imaging libraries for MRI analysis"
       ]
     },
     {
@@ -107,51 +111,55 @@ const ProjectDetail = () => {
       ]
     },
     {
-      id: "personal-finance-tracker",
-      title: "Personal Finance Tracker",
-      description: "Full-stack web application for tracking expenses and visualizing financial data with interactive charts.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "D3.js"],
+      id: "stock-watch",
+      title: "Stock Watch: Realtime Stock Market Analysis using Machine Learning",
+      description: "Created a Web Application which analyzes real time sentiment of news headlines related to stock market and implemented as a Machine Learning model.",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop",
+      tags: ["Machine Learning", "Flask", "ReactJS", "Google API", "Sentiment Analysis"],
       githubUrl: "#",
       liveUrl: "#",
-      fullDescription: "A comprehensive personal finance management application that helps users track income, expenses, and savings goals. The platform provides detailed analytics, budget planning tools, and interactive visualizations to give users insights into their financial habits.",
+      fullDescription: "Stock Watch is a comprehensive web application that combines real-time sentiment analysis of financial news with machine learning to provide insights into stock market trends. The system analyzes news headlines and applies sentiment analysis to help predict market movements and provide valuable insights for traders and investors.",
       features: [
-        "Expense categorization and tracking",
-        "Budget planning and monitoring",
-        "Interactive financial charts",
-        "Goal setting and progress tracking",
-        "Bank account integration"
+        "Real-time news headline sentiment analysis",
+        "Machine learning model for stock market prediction",
+        "Integration with Google API for news data",
+        "Interactive web interface for market analysis",
+        "Real-time sentiment scoring and visualization",
+        "Historical sentiment trend tracking"
       ],
       technologies: [
-        "React for frontend development",
-        "Node.js with Express for backend",
-        "MongoDB for data storage",
-        "D3.js for data visualization",
-        "JWT for authentication"
+        "Python Flask for backend development",
+        "ReactJS for frontend interface",
+        "Google API for news data retrieval",
+        "Machine learning libraries for sentiment analysis",
+        "Natural language processing for text analysis",
+        "Real-time data processing systems"
       ]
     },
     {
-      id: "music-recommendation-system",
-      title: "Music Recommendation System",
-      description: "Collaborative filtering system that recommends music based on user preferences and listening history.",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-      tags: ["Recommendation System", "Python", "Scikit-learn", "Pandas"],
+      id: "face-shape-analyzer",
+      title: "Face Shape Analyzer: Find out your Face Shape",
+      description: "Developed an offline model which inputs facial images and classifies face shape based on different categories using OpenCV and Haar Cascade.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop",
+      tags: ["Computer Vision", "OpenCV", "Haar Cascade", "Image Processing", "Classification"],
       githubUrl: "#",
       liveUrl: null,
-      fullDescription: "An advanced music recommendation engine that uses collaborative filtering and content-based filtering techniques to suggest songs tailored to individual user preferences. The system analyzes listening patterns, user ratings, and audio features to provide personalized recommendations.",
+      fullDescription: "The Face Shape Analyzer is an offline computer vision application that automatically identifies and classifies facial shapes from input images. Using advanced image processing techniques with OpenCV and Haar Cascade classifiers, the system can accurately determine face shape categories, making it useful for applications in beauty, fashion, and personal styling.",
       features: [
-        "Collaborative filtering algorithms",
-        "Content-based recommendations",
-        "Audio feature analysis",
-        "User preference learning",
-        "Playlist generation"
+        "Offline facial image processing",
+        "Automatic face shape classification",
+        "Multiple face shape category support",
+        "Real-time image analysis",
+        "High accuracy shape detection",
+        "User-friendly interface for image input"
       ],
       technologies: [
-        "Scikit-learn for machine learning",
-        "Pandas for data processing",
-        "Spotify Web API for music data",
-        "Flask for web interface",
-        "SQLite for user data storage"
+        "Python for core development",
+        "OpenCV for computer vision and image processing",
+        "Haar Cascade classifiers for face detection",
+        "NumPy for numerical computations",
+        "Image processing libraries",
+        "Machine learning for classification algorithms"
       ]
     }
   ];
