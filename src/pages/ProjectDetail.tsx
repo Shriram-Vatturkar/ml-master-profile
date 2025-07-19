@@ -63,51 +63,60 @@ const ProjectDetail = () => {
       ]
     },
     {
-      id: "stock-price-predictor",
-      title: "Stock Price Predictor",
-      description: "Machine learning model that predicts stock prices using LSTM networks and historical market data.",
-      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=300&fit=crop",
-      tags: ["Machine Learning", "LSTM", "Python", "TensorFlow"],
+      id: "3d-reconstruction-nerf",
+      title: "3D Reconstruction using Neural Radiance Fields",
+      description: "Investigated Neural Radiance Fields (NeRF) as a novel technique for high-fidelity 3D scene reconstruction and novel view synthesis from 2D image collections.",
+      image: "/src/assets/3d-reconstruction.jpg",
+      tags: ["PyTorch", "NeRF", "Computer Vision", "3D Reconstruction", "Deep Learning"],
       githubUrl: "#",
       liveUrl: null,
-      fullDescription: "A sophisticated time series prediction system using Long Short-Term Memory (LSTM) neural networks to forecast stock prices. The model analyzes historical price data, trading volumes, and technical indicators to make predictions with high accuracy.",
+      fullDescription: "This project explores Neural Radiance Fields (NeRF) as a cutting-edge technique for high-fidelity 3D scene reconstruction and novel view synthesis. The research involved a comprehensive literature review of the NeRF ecosystem, analyzing advancements in implicit neural representations, volume rendering techniques, and comparison to traditional photogrammetry methods. The project demonstrates how multi-view 2D images can be transformed into continuous volumetric scene representations using NeRF models.",
       features: [
-        "LSTM-based time series forecasting",
-        "Technical indicator integration",
-        "Risk assessment metrics",
-        "Interactive visualization dashboard",
-        "Real-time data processing"
+        "Neural Radiance Fields implementation for 3D reconstruction",
+        "Novel view synthesis from 2D image collections", 
+        "Comprehensive literature review of NeRF ecosystem",
+        "Analysis of implicit neural representations",
+        "Volume rendering technique optimization",
+        "Comparison with traditional photogrammetry methods",
+        "Multi-view image processing and alignment",
+        "High-fidelity 3D scene representation"
       ],
       technologies: [
-        "TensorFlow for model building",
-        "Pandas for data manipulation",
-        "Matplotlib for visualization",
-        "Alpha Vantage API for market data",
-        "Streamlit for dashboard interface"
+        "PyTorch for deep learning framework",
+        "NeRStudio for NeRF implementation",
+        "NumPy for numerical computations",
+        "Matplotlib for visualization and plotting",
+        "OpenCV for image processing and computer vision",
+        "COLMAP for structure-from-motion and multi-view stereo"
       ]
     },
     {
-      id: "real-time-object-detection",
-      title: "Real-time Object Detection",
-      description: "Computer vision application that detects and tracks objects in real-time using YOLO and OpenCV.",
+      id: "humanoid-walking-simulator",
+      title: "Humanoid Walking Simulator",
+      description: "Taught a humanoid to walk using reinforcement learning in the MuJoCo environment. Used algorithms such as SAC, PPO to validate and compare results across various model free learning environments.",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop",
-      tags: ["Computer Vision", "OpenCV", "YOLO", "Python"],
+      tags: ["Python", "Reinforcement Learning", "MuJoCo", "PyTorch", "OpenAI Gym"],
       githubUrl: "#",
       liveUrl: null,
-      fullDescription: "A real-time object detection and tracking system using the YOLO (You Only Look Once) algorithm. The application can process live video feeds, webcam input, or recorded videos to identify and track multiple objects simultaneously with high accuracy and speed.",
+      fullDescription: "This project focuses on teaching a humanoid robot to walk using advanced reinforcement learning techniques in the MuJoCo physics simulation environment. The research involved implementing and comparing various model-free reinforcement learning algorithms, specifically Soft Actor-Critic (SAC) and Proximal Policy Optimization (PPO), to achieve stable and efficient bipedal locomotion. The project demonstrates the application of modern RL algorithms to complex robotics control problems.",
       features: [
-        "Real-time video processing",
-        "Multi-object tracking",
-        "Custom object training",
-        "Bounding box visualization",
-        "Performance optimization"
+        "Humanoid walking simulation in MuJoCo environment",
+        "Implementation of Soft Actor-Critic (SAC) algorithm",
+        "Proximal Policy Optimization (PPO) implementation",
+        "Comparative analysis of model-free learning algorithms",
+        "Stable bipedal locomotion achievement",
+        "Physics-based simulation environment setup",
+        "Policy gradient optimization for continuous control",
+        "Performance metrics and reward function design"
       ],
       technologies: [
-        "YOLO v5 for object detection",
-        "OpenCV for video processing",
-        "NumPy for array operations",
-        "PyQt for GUI interface",
-        "ONNX for model optimization"
+        "Python for core development and scripting",
+        "OpenAI Gym for reinforcement learning environments",
+        "MuJoCo for physics simulation and robotics modeling",
+        "Stable-Baselines3 for RL algorithm implementations",
+        "PyTorch for deep learning and neural networks",
+        "NumPy for numerical computations and array operations",
+        "Matplotlib for data visualization and performance plotting"
       ]
     },
     {

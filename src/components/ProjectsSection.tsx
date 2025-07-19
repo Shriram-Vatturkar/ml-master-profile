@@ -25,19 +25,19 @@ export const ProjectsSection = () => {
       githubUrl: "#"
     },
     {
-      id: "stock-price-predictor",
-      title: "Stock Price Predictor",
-      description: "Machine learning model that predicts stock prices using LSTM networks and historical market data.",
-      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=300&fit=crop",
-      tags: ["Machine Learning", "LSTM", "Python", "TensorFlow"],
+      id: "3d-reconstruction-nerf",
+      title: "3D Reconstruction using Neural Radiance Fields",
+      description: "Investigated Neural Radiance Fields (NeRF) as a novel technique for high-fidelity 3D scene reconstruction and novel view synthesis from 2D image collections.",
+      image: "/src/assets/3d-reconstruction.jpg",
+      tags: ["PyTorch", "NeRF", "Computer Vision", "3D Reconstruction", "Deep Learning"],
       githubUrl: "#"
     },
     {
-      id: "real-time-object-detection",
-      title: "Real-time Object Detection",
-      description: "Computer vision application that detects and tracks objects in real-time using YOLO and OpenCV.",
+      id: "humanoid-walking-simulator",
+      title: "Humanoid Walking Simulator",
+      description: "Taught a humanoid to walk using reinforcement learning in the MuJoCo environment. Used algorithms such as SAC, PPO to validate and compare results across various model free learning environments.",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop",
-      tags: ["Computer Vision", "OpenCV", "YOLO", "Python"],
+      tags: ["Python", "Reinforcement Learning", "MuJoCo", "PyTorch", "OpenAI Gym"],
       githubUrl: "#"
     },
     {
