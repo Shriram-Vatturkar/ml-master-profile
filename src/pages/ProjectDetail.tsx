@@ -16,7 +16,7 @@ const ProjectDetail = () => {
       description: "Developed a deep learning-powered legal search engine for corporate law using RAG and GraphRAG for precise document retrieval and summarization.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
       tags: ["RAG", "GraphRAG", "Deep Learning", "NLP", "Legal Tech"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Shriram-Vatturkar/Corporate-Law-Legal-Search-Engine-with-Advanced-RAG-and-Graph-Based-Retrieval-Methods",
       liveUrl: null,
       fullDescription: "This project implements a sophisticated legal document retrieval system combining Retrieval-Augmented Generation (RAG) with GraphRAG for corporate law applications. The system enables precise document retrieval and automatic summarization, making complex legal research more efficient and accessible for legal professionals.",
       features: [
@@ -42,7 +42,7 @@ const ProjectDetail = () => {
       description: "Developed a model which classifies MRI of brain scans into dementia stages using machine learning and deep learning techniques.",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
       tags: ["Deep Learning", "CNN", "Medical AI", "MRI Analysis", "Classification"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Shriram-Vatturkar",
       liveUrl: null,
       fullDescription: "This medical AI project focuses on the early identification and classification of dementia stages using advanced machine learning and deep learning techniques. The system analyzes MRI brain scans to classify different stages of dementia, addressing critical challenges in medical diagnosis including class imbalance and subtle image differences between dementia stages.",
       features: [
@@ -68,7 +68,7 @@ const ProjectDetail = () => {
       description: "Investigated Neural Radiance Fields (NeRF) as a novel technique for high-fidelity 3D scene reconstruction and novel view synthesis from 2D image collections.",
       image: "/src/assets/3d-reconstruction.jpg",
       tags: ["PyTorch", "NeRF", "Computer Vision", "3D Reconstruction", "Deep Learning"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Shriram-Vatturkar/3D-Reconstruction-using-Neural-Radiance-Fields",
       liveUrl: null,
       fullDescription: "This project explores Neural Radiance Fields (NeRF) as a cutting-edge technique for high-fidelity 3D scene reconstruction and novel view synthesis. The research involved a comprehensive literature review of the NeRF ecosystem, analyzing advancements in implicit neural representations, volume rendering techniques, and comparison to traditional photogrammetry methods. The project demonstrates how multi-view 2D images can be transformed into continuous volumetric scene representations using NeRF models.",
       features: [
@@ -96,7 +96,7 @@ const ProjectDetail = () => {
       description: "Taught a humanoid to walk using reinforcement learning in the MuJoCo environment. Used algorithms such as SAC, PPO to validate and compare results across various model free learning environments.",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop",
       tags: ["Python", "Reinforcement Learning", "MuJoCo", "PyTorch", "OpenAI Gym"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Shriram-Vatturkar/Walking-Simulator",
       liveUrl: null,
       fullDescription: "This project focuses on teaching a humanoid robot to walk using advanced reinforcement learning techniques in the MuJoCo physics simulation environment. The research involved implementing and comparing various model-free reinforcement learning algorithms, specifically Soft Actor-Critic (SAC) and Proximal Policy Optimization (PPO), to achieve stable and efficient bipedal locomotion. The project demonstrates the application of modern RL algorithms to complex robotics control problems.",
       features: [
@@ -125,7 +125,7 @@ const ProjectDetail = () => {
       description: "Created a Web Application which analyzes real time sentiment of news headlines related to stock market and implemented as a Machine Learning model.",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop",
       tags: ["Machine Learning", "Flask", "ReactJS", "Google API", "Sentiment Analysis"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Shriram-Vatturkar/Stock-Market-Sentiment-Analysis",
       liveUrl: "#",
       fullDescription: "Stock Watch is a comprehensive web application that combines real-time sentiment analysis of financial news with machine learning to provide insights into stock market trends. The system analyzes news headlines and applies sentiment analysis to help predict market movements and provide valuable insights for traders and investors.",
       features: [
@@ -151,7 +151,7 @@ const ProjectDetail = () => {
       description: "Developed an offline model which inputs facial images and classifies face shape based on different categories using OpenCV and Haar Cascade.",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop",
       tags: ["Computer Vision", "OpenCV", "Haar Cascade", "Image Processing", "Classification"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Shriram-Vatturkar",
       liveUrl: null,
       fullDescription: "The Face Shape Analyzer is an offline computer vision application that automatically identifies and classifies facial shapes from input images. Using advanced image processing techniques with OpenCV and Haar Cascade classifiers, the system can accurately determine face shape categories, making it useful for applications in beauty, fashion, and personal styling.",
       features: [
