@@ -37,7 +37,7 @@ export const ProjectCard = ({
 
   return (
     <Card 
-      className="group hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer"
+      className="group hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer h-full flex flex-col"
       onClick={handleCardClick}
     >
       <div className="relative overflow-hidden">
@@ -73,16 +73,16 @@ export const ProjectCard = ({
         </div>
       </div>
 
-      <CardHeader>
+      <CardHeader className="flex-grow">
         <CardTitle className="text-lg group-hover:text-primary transition-colors">
           {title}
         </CardTitle>
-        <CardDescription className="text-sm line-clamp-2">
+        <CardDescription className="text-sm line-clamp-3">
           {description}
         </CardDescription>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="pt-0">
         <div className="flex flex-wrap gap-1">
           {tags.map((tag) => (
             <Badge key={tag} variant="outline" className="text-xs">
